@@ -1,6 +1,6 @@
 import { LitElement, html, property, PropertyValues } from 'lit-element';
 
-class Button extends LitElement {
+export class Button extends LitElement {
   @property({ type: Boolean }) active = false;
   @property({ type: Boolean }) disabled = false;
   @property({ type: Boolean }) loading = false;
