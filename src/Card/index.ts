@@ -1,5 +1,6 @@
 import { LitElement, html, property, customElement } from 'lit-element';
 
+@customElement('wp-card')
 export class Card extends LitElement {
   @property({ type: Boolean, reflect: true }) interactive = false;
   @property({ type: String }) onClick = '';
@@ -19,5 +20,3 @@ export class Card extends LitElement {
     }
   }
 }
-
-customElements.define('wp-card', Card);

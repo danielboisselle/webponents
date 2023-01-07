@@ -1,5 +1,6 @@
-import { LitElement, html, property, PropertyValues } from 'lit-element';
+import { LitElement, html, property, customElement } from 'lit-element';
 
+@customElement('wp-button')
 export class Button extends LitElement {
   @property({ type: Boolean }) active = false;
   @property({ type: Boolean }) disabled = false;
@@ -19,5 +20,3 @@ export class Button extends LitElement {
     `;
   }
 }
-
-customElements.define('wp-button', Button);
