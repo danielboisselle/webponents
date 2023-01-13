@@ -4,7 +4,7 @@ import { html } from 'lit-element';
 import './index'
 
 export default {
-  title: 'Example/Breadcrumb',
+  title: 'Breadcrumb',
 } as Meta;
 
 const items = Array(3).fill(null).map((item, i) => ({ href: `href-url-${i}`, label: `LABEL-${i}` }))

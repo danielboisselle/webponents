@@ -1,9 +1,9 @@
 import { Story } from '@storybook/web-components';
 import { html } from 'lit-element';
-import './index'
+import '../index'
 
 export default {
-  title: 'Example/Button',
+  title: 'Button',
   component: 'wp-button'
 }
 
@@ -21,4 +21,12 @@ Default.args = {
   label: 'My Label',
   loading: false,
   disabled: false,
+};
+
+export const Disabled = Template.bind({});
+
+Disabled.args = {
+  label: 'My Label',
+  loading: false,
+  disabled: true,
 };
