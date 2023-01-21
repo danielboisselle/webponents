@@ -1,4 +1,5 @@
-import { LitElement, html, property, customElement } from 'lit-element';
+import { LitElement, html } from 'lit';
+import {customElement, property} from 'lit/decorators.js';
 
 @customElement('wp-button')
 export class Button extends LitElement {
@@ -14,7 +15,7 @@ export class Button extends LitElement {
     if (this.size) className += ` ${this.size}`;
 
     return html`
-      <button class=${className} ?disabled=${this.disabled || this.loading}>
+      <button class=${className.concat(' text-sky-500 hover:text-sky-600')} ?disabled=${this.disabled || this.loading}>
         ${this.loading ? 'Loading...' : this.label}
       </button>
     `;

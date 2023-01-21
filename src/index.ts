@@ -1,4 +1,4 @@
-import './global.css'
+// import './global.css'
 
 export { Card } from "./Card";
 export { Button } from "./Button";

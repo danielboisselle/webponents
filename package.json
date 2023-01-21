@@ -4,8 +4,12 @@
   "description": "A consumable web-component library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "concurrently \"yarn:watch:*\"",
+    "build-storybook": "concurrently \"yarn:build:*\"",
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./.storybook/tailwind.css",
+    "build:storybook": "storybook build",
+    "watch:css": "npx postcss-cli ./src/tailwind.css -o ./.storybook/tailwind.css --watch",
+    "watch:storybook": "start-storybook -p 6006"
   },
   "repository": {
     "type": "git",
@@ -22,12 +26,18 @@
     "@storybook/addon-actions": "^6.5.14",
     "@storybook/addon-essentials": "^6.5.14",
     "@storybook/addon-links": "^6.5.14",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-webpack4": "^6.5.14",
     "@storybook/manager-webpack4": "^6.5.14",
     "@storybook/web-components": "^6.5.14",
     "babel-loader": "^8.3.0",
+    "concurrently": "^7.6.0",
     "lit": "^2.6.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-lit": "^1.0.1",
     "storybook": "^6.5.14",
+    "tailwindcss": "^3.2.4",
     "typescript": "^4.9.4"
   },
   "dependencies": {
