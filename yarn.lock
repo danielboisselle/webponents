@@ -6219,7 +6219,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
 
-lit-element@^3.2.0, lit-element@^3.2.2:
+lit-element@^3.2.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-3.2.2.tgz#d148ab6bf4c53a33f707a5168e087725499e5f2b"
   integrity sha512-6ZgxBR9KNroqKb6+htkyBwD90XGRiqKDHVrW/Eh0EZ+l+iC+u+v+w3/BA5NGi4nizAVHGYvQBHUDuSmLjPp7NQ==
@@ -8611,7 +8611,7 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.14.2.tgz#56138d200f9fe5f582ad63bc2704dbc0e4a45068"
   integrity sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==
 
-storybook@^6.5.14:
+storybook@^6.5.15:
   version "6.5.15"
   resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.5.15.tgz#5e283e152d7b2fb04ea0009abad76d2645c32fed"
   integrity sha512-qaoR70xFK1hQw9IaBU9C3roNRbcTi0JFsqOnuKAFbatLXnGni7Wx4krtqHaSsy9tNPIzZxy0n/RgoBS+4HC2sQ==

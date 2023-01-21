@@ -1,4 +1,6 @@
-import { LitElement, html, property, customElement } from 'lit-element';
+import { LitElement, html } from 'lit';
+import { property, customElement } from 'lit/decorators'
+
 
 @customElement('wp-button')
 export class Button extends LitElement {

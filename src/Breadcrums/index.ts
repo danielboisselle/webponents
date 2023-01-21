@@ -1,4 +1,5 @@
-import { LitElement, html, css, customElement, property } from 'lit-element';
+import { LitElement, html, css} from 'lit';
+import { property, customElement } from 'lit/decorators'
 
 interface BreadcrumbItem {
   href: string;
