@@ -1,7 +1,6 @@
 import { LitElement, html } from 'lit';
 import { property, customElement } from 'lit/decorators'
 
-
 @customElement('wp-button')
 export class Button extends LitElement {
   @property({ type: Boolean }) active = false;
@@ -16,7 +15,7 @@ export class Button extends LitElement {
     if (this.size) className += ` ${this.size}`;
 
     return html`
-      <button class=${className} ?disabled=${this.disabled || this.loading}>
+      <button class=${className.concat(' text-3xl font-bold underline')} ?disabled=${this.disabled || this.loading}>
         ${this.loading ? 'Loading...' : this.label}
       </button>
     `;
