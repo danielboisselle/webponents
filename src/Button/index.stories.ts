@@ -1,5 +1,5 @@
 import { Story } from '@storybook/web-components';
-import { html } from 'lit-element';
+import { html } from 'lit';
 import '../index'
 
 export default {
